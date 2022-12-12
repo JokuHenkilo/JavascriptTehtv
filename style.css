@@ -1,18 +1,24 @@
 h1
 {
-	margin: 0px;
+	margin: 1px;
+	font-size: 22px;
 }
 
 button
 {
 	margin: 1px;
-	margin-left: 105px;
+	margin-left: 103px;
 }
 
 input
 {
 	margin: 4px;
 	margin-left: 1px;
+}
+
+textarea
+{
+	resize: none;
 }
 
 .nameClass
@@ -29,9 +35,8 @@ input
 .outputBox
 {
 	margin-top: 2px;
-	border-radius: 2px;
-	border-color: rgb(255,255,128);
-	border-style: solid;
+	border-color: rgb(128,128,128);
+	border-style: inset;
 	width: 250px;
 }
 
@@ -45,11 +50,12 @@ div
 {
 	border-style: solid;
 	border-color: rgb(128,128,255);
+	border-style: outset;
 }
 
 .importantItem
 {
-	border-color: rgb(255,64,64);
+	border-color: rgb(255,0,0);
 }
 .importantText
 {
