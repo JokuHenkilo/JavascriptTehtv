@@ -16,13 +16,29 @@ function onAddButton(event)
 	let curDateTime = getcurrentDateTime();
 	
 	let listLocation = document.querySelector("noteC")
-	let newListItem = document.createElement("div");
-	newListItem.textContent = formData.get("Name") + ' ' + curDateTime + '\n' + formData.get("Note");
+	let newNote = document.createElement("div");
+	let newNoteName = document.createElement("ins");
+	let newNoteDate = document.createElement("ins");
+	let newNoteBreak = document.createElement("br");
+	let newNoteBody = document.createElement("ins");
+	newNoteName.textContent = formData.get("Name");
+	newNoteName.classList.add("noteName");
+	newNoteDate.textContent = curDateTime;
+	newNoteDate.classList.add("noteTime");
+	newNoteBody.textContent = formData.get("Note");
+	newNoteBody.classList.add("noteBody");
 	
 	if(formData.get("impCheckbox"))
-		newListItem.classList.add("importantItem");
+	{
+		newNote.classList.add("importantItem");
+		newNoteName.classList.add("importantText");
+	}
 	
-	listLocation.parentNode.insertBefore(newListItem, listLocation);
+	listLocation.parentNode.insertBefore(newNote, listLocation);
+	newNote.appendChild(newNoteName);
+	newNote.appendChild(newNoteDate);
+	newNote.appendChild(newNoteBreak);
+	newNote.appendChild(newNoteBody);
 }
 
 function getcurrentDateTime()
