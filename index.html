@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript Tehtävä</title>
+</head>
+<link rel="stylesheet" href="./style.css">
+<script type="text/javascript" src="./script.js" defer></script>
+<body>
+
+	<form id="inputForm">
+		<h1>Name</h1>
+		<input type="text" id="nameField" name="Name" class="nameClass">
+		
+		<h1>Note</h1>
+		<textarea placeholder="" id="noteField" name="Note" class="noteClass"></textarea>
+		<br>
+		
+		<input type="checkbox" id="importantCheckbox" name="impCheckbox">
+		<label for="importantCheckbox">Important</label>
+		
+		<button type="submit" id="addButton">Add Note</button>
+	</form>
+
+	<div class="outputBox">
+		<noteC id="notesCount" class="counter">Notes: 0</noteC>
+	</div>
+	
+</body>
+</html>

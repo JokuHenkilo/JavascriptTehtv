@@ -1,0 +1,53 @@
+h1
+{
+	margin: 0px;
+}
+
+button
+{
+	margin: 1px;
+	margin-left: 105px;
+}
+
+input
+{
+	margin: 4px;
+	margin-left: 1px;
+}
+
+.nameClass
+{
+	width: 150px
+}
+
+.noteClass
+{
+	width: 250px;
+	height: 100px;
+}
+
+.outputBox
+{
+	margin-top: 2px;
+	border-radius: 2px;
+	border-color: rgb(255,255,0);
+	border-style: solid;
+	width: 250px;
+}
+
+.counter
+{
+	margin-left: 2px;
+	margin-bottom: 1px;
+}
+
+div
+{
+	border-style: solid;
+	border-color: rgb(0,0,255);
+}
+
+.importantItem
+{
+	border-color: rgb(255,0,0);
+}
